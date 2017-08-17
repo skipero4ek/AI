@@ -120,7 +120,11 @@ namespace AI
 
             if(result.Length == 0)
             {
-                return Task.Result();
+                Console.WriteLine(Task.Result());
+            }
+            else
+            {
+                Console.WriteLine(result);
             }
         }
     }
