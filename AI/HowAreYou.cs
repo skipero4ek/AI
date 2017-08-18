@@ -29,7 +29,7 @@ namespace AI
                 }
             int index = r.Next(ls.Count);
             string res=ls[index].ToString();
-            string []resArr=res.Split(":");
+            string []resArr=res.Split(':');
             return resArr[1];
         }
 

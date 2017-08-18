@@ -13,34 +13,33 @@ namespace AI
             string str = "";
             while (!(str = Console.ReadLine()).Equals("Пока"))
             {
-                if (str.Length > 2)
+                str = str.ToLower();
+                
+                if (str.IndexOf("div")!=-1 || str.IndexOf("раз")!=-1 || str.IndexOf("умн")!=-1 || str.IndexOf("mul")!=-1 || str.IndexOf("sum")!=-1 || str.IndexOf("сум")!=-1 || str.IndexOf("sub")!=-1 || str.IndexOf("отн")!=-1)
                 {
-                    string s = new String(new char[] { str[0], str[1], str[2] });
-                    if (s.Equals("div") || s.Equals("раз") || s.Equals("умн") || s.Equals("mul") || s.Equals("sum") || s.Equals("сум") || s.Equals("sub") || s.Equals("отн"))
-                    {
-                        MathTask(str);
-                    }
-                    else
-                    {
-                        if (str.IndexOf("Hello") != -1 || str.IndexOf("Привет") != -1 || str.IndexOf("Hi") != -1 || str.IndexOf("Здор") != -1 || str.IndexOf("Здра") != -1 || str.IndexOf("Добрый ") != -1 || str.IndexOf("Good m") != -1 || str.IndexOf("Good e") != -1 || str.IndexOf("Good d") != -1)
-                        {
-                            Console.WriteLine(Hello.Result());                            
-                        }
-                        if (str.IndexOf("Whats") != -1 || str.IndexOf("How") != -1)
-                        {
-                            Console.WriteLine(HowAreYou.Result("how"));
-                        }
-                        if (str.IndexOf("Drink") != -1 || str.IndexOf("drink") != -1)
-                        {
-                            Console.WriteLine(HowAreYou.Result("drink"));
-                        }
-                        if (str.IndexOf("plan") != -1)
-                        {
-                            Console.WriteLine(HowAreYou.Result("plans"));
-                        }
-
-                    }
+                    MathTask(str);
                 }
+                else
+                {
+                    if (str.IndexOf("hello") != -1 || str.IndexOf("привет") != -1 || str.IndexOf("hi") != -1 || str.IndexOf("здор") != -1 || str.IndexOf("здра") != -1 || str.IndexOf("добрый ") != -1 || str.IndexOf("good m") != -1 || str.IndexOf("good e") != -1 || str.IndexOf("good d") != -1)
+                    {
+                        Console.WriteLine(Hello.Result());                            
+                    }
+                    if (str.IndexOf("whats") != -1 || str.IndexOf("how") != -1 || str.IndexOf("как") != -1)
+                    {
+                        Console.WriteLine(HowAreYou.Result("how"));
+                    }
+                    if (str.IndexOf("drink") != -1|| str.IndexOf("пить") != -1 || str.IndexOf("пьем") != -1)
+                    {
+                        Console.WriteLine(HowAreYou.Result("drink"));
+                    }
+                    if (str.IndexOf("plan") != -1)
+                    {
+                        Console.WriteLine(HowAreYou.Result("plans"));
+                    }
+
+                }
+                
             }
             Console.ReadKey();
         }
