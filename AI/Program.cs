@@ -28,7 +28,7 @@ namespace AI
                         }
                         if (str.IndexOf("Whats") != -1 || str.IndexOf("How") != -1)
                         {
-                            Console.WriteLine(HowAreYou.Result("drink"));
+                            Console.WriteLine(HowAreYou.Result("how"));
                         }
                         if (str.IndexOf("Drink") != -1 || str.IndexOf("drink") != -1)
                         {
@@ -44,7 +44,7 @@ namespace AI
             }
             Console.ReadKey();
         }
-        public void MathTask(string str)
+        public static void MathTask(string str)
         {
             string result = "";
             if (str.Length > 2)

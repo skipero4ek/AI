@@ -1,0 +1,5 @@
+D:\Users\user\Documents\Visual Studio 2013\Projects\AI\AI\obj\Debug\AI.csprojResolveAssemblyReference.cache
+D:\Users\user\Documents\Visual Studio 2013\Projects\AI\AI\bin\Debug\AI.exe
+D:\Users\user\Documents\Visual Studio 2013\Projects\AI\AI\bin\Debug\AI.pdb
+D:\Users\user\Documents\Visual Studio 2013\Projects\AI\AI\obj\Debug\AI.exe
+D:\Users\user\Documents\Visual Studio 2013\Projects\AI\AI\obj\Debug\AI.pdb

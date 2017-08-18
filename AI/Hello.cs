@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _17._08._2017CW
+namespace AI
 {
     class Hello
     {

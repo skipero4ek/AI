@@ -11,11 +11,11 @@ namespace AI
     {
         HowAreYou() { }
 
-        public string Result()
+        public static string Result()
         { 
         return Result("how");
         }
-        public string Result(String str)
+        public static string Result(String str)
         {
             Random r = new Random();
             string[]sArr= File.ReadAllLines("Answer.txt");
