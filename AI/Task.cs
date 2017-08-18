@@ -24,8 +24,14 @@ namespace AI
                     good.Add(temp);
                 }
             }
+           
+
+
            Random r = new Random();
-           return good[r.Next(0,good.Count)];
+           string s = good[r.Next(0,good.Count)];
+           string[] res = s.Split(':');
+           return res[1];
+
         }
     }
 }
